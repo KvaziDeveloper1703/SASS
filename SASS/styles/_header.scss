@@ -1,0 +1,16 @@
+@mixin flexCenter($direction){
+ flex-direction: $direction;
+}
+
+header {
+    @include flexCenter(column);
+    background: $primaryBTN;
+    display: flex;
+    justify-content: center;
+    p {
+        background: $secondaryColor;
+        &:hover{
+            background: red;
+        }
+    }
+}
